@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 247 248 250;
+  --surface: 255 255 255;
+  --surface-2: 243 245 247;
+  --surface-3: 234 237 241;
+  --border: 226 230 235;
+  --border-strong: 205 211 219;
+  --fg: 17 24 39;
+  --fg-muted: 75 85 99;
+  --fg-subtle: 107 114 128;
+  --accent: 15 118 110;
+  --accent-fg: 255 255 255;
+  --accent-soft: 204 251 241;
+  --critical: 185 28 28;
+  --high: 194 65 12;
+  --medium: 161 98 7;
+  --low: 21 128 61;
+  --info: 29 78 216;
+}
+.dark {
+  --bg: 11 13 16;
+  --surface: 18 21 26;
+  --surface-2: 24 28 34;
+  --surface-3: 32 37 45;
+  --border: 38 44 53;
+  --border-strong: 55 63 75;
+  --fg: 236 239 243;
+  --fg-muted: 166 174 187;
+  --fg-subtle: 130 139 153;
+  --accent: 45 212 191;
+  --accent-fg: 4 47 46;
+  --accent-soft: 19 78 74;
+  --critical: 248 113 113;
+  --high: 251 146 60;
+  --medium: 250 204 21;
+  --low: 74 222 128;
+  --info: 96 165 250;
+}
+
+body { @apply bg-bg text-fg font-sans antialiased; }
+
+@layer components {
+  .card { @apply rounded-xl border border-line bg-surface p-4 shadow-card; }
+  .btn { @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-accent disabled:opacity-50; }
+  .btn-primary { @apply btn bg-accent text-accent-fg hover:opacity-90; }
+  .btn-ghost { @apply btn border border-line bg-surface hover:bg-surface-2; }
+  .btn-danger { @apply btn bg-critical text-white hover:opacity-90; }
+  .input { @apply w-full rounded-lg border border-line bg-surface px-3 py-1.5 text-sm focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent; }
+  .label { @apply mb-1 block text-xs font-medium text-fg-muted; }
+  .badge { @apply inline-flex items-center rounded-full border border-line px-2 py-0.5 text-2xs font-medium; }
+  .table { @apply w-full text-sm; }
+  .table th { @apply sticky top-0 bg-surface-2 px-3 py-2 text-left text-xs font-semibold text-fg-muted; }
+  .table td { @apply border-t border-line px-3 py-2; }
+  .h1 { @apply font-display text-2xl font-semibold tracking-tight; }
+  .h2 { @apply font-display text-base font-semibold; }
+  .muted { @apply text-sm text-fg-muted; }
+}

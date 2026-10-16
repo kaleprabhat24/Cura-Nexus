@@ -1,0 +1,15 @@
+{
+  "contract": "cura-nexus/cxr-triage@1",
+  "note": "SAMPLE DATA - illustrative scores, not real model output",
+  "batchId": "CXR-BATCH-SAMPLE-A",
+  "model": { "name": "cxr-vae-anomaly", "version": "2.3.1" },
+  "runAt": "2026-10-16T09:00:00+05:30",
+  "images": [
+    { "patient": { "mrn": "CN-000003" }, "studyId": "CXR-10431", "anomalyScore": 0.94, "rank": 1, "priority": "Critical", "findings": "High reconstruction error, right lower zone" },
+    { "patient": { "mrn": "CN-000007" }, "studyId": "CXR-10432", "anomalyScore": 0.81, "rank": 2, "priority": "Critical" },
+    { "patient": { "mrn": "CN-000012" }, "studyId": "CXR-10433", "anomalyScore": 0.64, "rank": 3, "priority": "Review" },
+    { "patient": { "mrn": "CN-000001" }, "studyId": "CXR-10434", "anomalyScore": 0.33, "rank": 4, "priority": "Routine" },
+    { "patient": { "mrn": "CN-000020" }, "studyId": "CXR-10435", "anomalyScore": 0.21, "rank": 5, "priority": "Routine" },
+    { "patient": { "mrn": "EXT-55120", "name": "Harish Gowda", "birthDate": "1949-02-17" }, "studyId": "CXR-10436", "anomalyScore": 0.58, "rank": 6, "priority": "Review", "findings": "Unknown patient - should be reported as unmatched" }
+  ]
+}

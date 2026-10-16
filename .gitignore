@@ -1,0 +1,13 @@
+node_modules
+dist
+coverage
+_reference/
+test-results
+playwright-report
+*.local
+.DS_Store
+.vite
+_archive/
+
+*.zip
+.claude/

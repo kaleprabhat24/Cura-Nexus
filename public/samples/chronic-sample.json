@@ -1,0 +1,13 @@
+{
+  "contract": "cura-nexus/chronic-risk@1",
+  "note": "SAMPLE DATA - illustrative scores, not real model output",
+  "model": { "name": "chronic-followup-xgb", "version": "1.4.0" },
+  "generatedAt": "2026-10-16T08:00:00+05:30",
+  "patients": [
+    { "patient": { "mrn": "CN-000001" }, "riskScore": 0.82, "tier": "High", "factors": [{ "name": "Missed appointments", "weight": 0.21 }, { "name": "HbA1c trend", "weight": 0.17 }], "recommendedAction": "Phone call within 48 h" },
+    { "patient": { "mrn": "CN-000004" }, "riskScore": 0.74, "tier": "High", "factors": [{ "name": "eGFR decline", "weight": 0.16 }], "recommendedAction": "Nephrology review" },
+    { "patient": { "mrn": "CN-000009" }, "riskScore": 0.52, "tier": "Medium", "factors": [{ "name": "Refill gap", "weight": 0.1 }], "recommendedAction": "SMS reminder" },
+    { "patient": { "mrn": "CN-000015" }, "riskScore": 0.18, "tier": "Low", "factors": [{ "name": "Good adherence", "weight": -0.09 }], "recommendedAction": "Routine review" },
+    { "patient": { "mrn": "CN-009999" }, "riskScore": 0.6, "tier": "Medium", "factors": [], "recommendedAction": "Unknown MRN - reported as unmatched" }
+  ]
+}

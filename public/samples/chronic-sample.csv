@@ -1,0 +1,4 @@
+mrn,risk_score,tier,factors,action
+CN-000002,0.77,High,missed_appointments:0.2;bp_uncontrolled:0.12,Call within 48 h
+CN-000006,0.45,Medium,hba1c_trend:0.11,Tele-consult in 2 weeks
+CN-000011,0.2,Low,good_adherence:-0.1,Annual review
